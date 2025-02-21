@@ -1,0 +1,93 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Imagem */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+}
+
+/* Parágrafo de descrição */
+p {
+    text-align: center;
+    font-style: italic;
+    margin: 10px auto;
+    color: #555;
+}
+
+/* Formulário */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[name="detalhes"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #0078d4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background: #005bb5;
+}
+
+/* Lista de receitas */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+ul li {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li h3 {
+    margin: 0 0 10px;
+    color: #0078d4;
+    font-size: 20px;
+}
+
+ul li p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+}
