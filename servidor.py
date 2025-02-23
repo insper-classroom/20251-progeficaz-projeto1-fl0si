@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 
-# Configurando a pasta de arquivos estáticos
+
 app.static_folder = 'static'    
 
 
@@ -19,10 +19,30 @@ def index():
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
-    titulo = request.form.get('titulo')  # Obtém o valor do campo 'titulo'
-    detalhes = request.form.get('detalhes')  # Obtém o valor do campo 'detalhes'
+    titulo = request.form.get('titulo')  
+    detalhes = request.form.get('detalhes')  
 
     views.submit(titulo, detalhes)
+    return redirect('/')
+
+@app.route('/delete/<int:id>', methods=['GET'])
+def delete(id):
+
+    views.delete(id)
+    return redirect('/')
+
+@app.route('/update_page/<int:id>', methods=['GET'])
+def update_page (id):
+
+    return render_template_string(views.edit_page(id))
+
+
+@app.route('/edit_note/<int:id>', methods=['POST'])
+def atualizar(id):
+    titulo = request.form.get('titulo')  
+    detalhes = request.form.get('detalhes')  
+
+    views.save_note(titulo, detalhes, id)
     return redirect('/')
 
 

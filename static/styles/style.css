@@ -1,4 +1,4 @@
-/* Estilização geral */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,14 +7,14 @@ body {
     color: #333;
 }
 
-/* Imagem */
+
 img {
     display: block;
     margin: 20px auto;
     max-width: 200px;
 }
 
-/* Parágrafo de descrição */
+
 p {
     text-align: center;
     font-style: italic;
@@ -22,7 +22,7 @@ p {
     color: #555;
 }
 
-/* Formulário */
+
 form {
     max-width: 500px;
     margin: 20px auto;
@@ -64,7 +64,7 @@ form input[type="submit"]:hover {
     background: #005bb5;
 }
 
-/* Lista de receitas */
+
 ul {
     list-style: none;
     padding: 0;

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Nota</title>
+    <link rel="stylesheet" type="text/css" href="{{{{ url_for('static', filename ='/styles/edit.css') }}}}">    
+</head>
+<body>
+    <h1>Editar Nota</h1>
+    <form action="/edit_note/{id}" method="POST">
+        <label for="note-title">Titulo:</label>
+        <input type="text" id="note-title" name="titulo" value="{titulo}">
+        <br><br>
+        <label for="note-content">Conteudo:</label>
+        <textarea id="note-content" name="detalhes" rows="5" value="{detalhes}"></textarea>
+        <br><br>
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>
